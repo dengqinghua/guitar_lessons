@@ -50,12 +50,22 @@ module Interval
     #    ]
     #
     def calculate
-      @to += 7 if @to < @from
+      if [3, 4].all? { |scale| (@from..@to).include? scale }
+        @deviations -= 0.5
+      end
 
-      @deviations -= 0.5 if [3, 4].all? { |scale| (@from..@to).include? scale }
-      @deviations -= 0.5 if [7, 8].all? { |scale| (@from..@to).include? scale }
+      if @to < @from
+        @to += 7
+        if [7, 8].all? { |scale| (@from..@to).include? scale }
+          @deviations -= 0.5
+        end
 
-      step = (@to - @from + @deviations).to_i
+        if [10, 11].all? { |scale| (@from..@to).include? scale }
+          @deviations -= 0.5
+        end
+      end
+
+      step = (@to - @from + @deviations).to_f
 
       Intervals::INTERVAL_BY_STEP[step]
     end
@@ -72,7 +82,7 @@ module Interval
       elsif unnatural_rex = UNNATURAL_SCALE_REX.match(from_string)
         dim_or_aug, from = unnatural_rex.captures
 
-        DIM_SCALE_REX.match(dim_or_aug) ? deviations -= 0.5 : deviations += 0.5
+        DIM_SCALE_REX.match(dim_or_aug) ? deviations += 0.5 : deviations -= 0.5
       else
         raise "#{from} is not recognized."
       end
@@ -82,7 +92,7 @@ module Interval
       elsif unnatural_rex = UNNATURAL_SCALE_REX.match(to_string)
         dim_or_aug, to = unnatural_rex.captures
 
-        DIM_SCALE_REX.match(dim_or_aug) ? deviations += 0.5 : deviations -= 0.5
+        DIM_SCALE_REX.match(dim_or_aug) ? deviations -= 0.5 : deviations += 0.5
       else
         raise "#{to} is not recognized."
       end

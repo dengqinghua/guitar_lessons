@@ -20,19 +20,19 @@ module Intervals
   }
 
   INTERVAL_BY_STEP = {
-    0   => %w(U unison),
+    0.0 => %w(U unison),
     0.5 => %w(m2 minor_second),
-    1   => %w(M2 major_second),
+    1.0 => %w(M2 major_second),
     1.5 => %w(m3 minor_third),
-    2   => %w(M3 major_third),
+    2.0 => %w(M3 major_third),
     2.5 => %w(P4 perfect_fourth),
-    3   => %w(augmented_forth diminished_fifrth tritone A4 D4 TT),
+    3.0 => %w(augmented_forth diminished_fifrth tritone A4 D4 TT),
     3.5 => %w(P5 perfect_fifth),
-    4   => %w(m6 minor_sixth),
+    4.0 => %w(m6 minor_sixth),
     4.5 => %w(M6 major_sixth),
-    5   => %w(m7 minor_seventh),
+    5.0 => %w(m7 minor_seventh),
     5.5 => %w(M7 major_seventh),
-    6   => %w(Oct octave)
+    6.0 => %w(Oct octave)
   }
 
   ##
