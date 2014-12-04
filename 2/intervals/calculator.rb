@@ -50,12 +50,13 @@ module Interval
     #    ]
     #
     def calculate
-      if [3, 4].all? { |scale| (@from..@to).include? scale }
-        @deviations -= 0.5
-      end
+      Intervals::INTERVAL_BY_STEP[calculate_step]
+    end
 
+    def calculate_step
       if @to < @from
         @to += 7
+
         if [7, 8].all? { |scale| (@from..@to).include? scale }
           @deviations -= 0.5
         end
@@ -65,9 +66,14 @@ module Interval
         end
       end
 
+      if [3, 4].all? { |scale| (@from..@to).include? scale }
+        @deviations -= 0.5
+      end
+
       step = (@to - @from + @deviations).to_f
 
-      Intervals::INTERVAL_BY_STEP[step]
+      step < 0 ? step += 6 : step
+      step > 6 ? step -= 6 : step
     end
 
     private

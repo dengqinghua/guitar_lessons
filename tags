@@ -1,0 +1,26 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Calculator	2/intervals/calculator.rb	/^  class Calculator$/;"	c	class:Interval
+Interval	2/intervals/calculator.rb	/^module Interval$/;"	m
+IntervalGuesser	2/intervals/interval_guesser.rb	/^class IntervalGuesser$/;"	c
+Intervals	2/intervals/intervals.rb	/^module Intervals$/;"	m
+TuneGuesser	1/scales_in_guitar/tune_guesser.rb	/^class TuneGuesser$/;"	c
+TuneGuesserProcess	1/scales_in_guitar/tune_guesser_process.rb	/^class TuneGuesserProcess$/;"	c
+atom	2/intervals/intervals.rb	/^  def self.atom(from, to)$/;"	F	class:Intervals
+calculate	2/intervals/calculator.rb	/^    def calculate$/;"	f	class:Interval.Calculator
+current_string	1/scales_in_guitar/tune_guesser_process.rb	/^  def current_string$/;"	f	class:TuneGuesserProcess
+get_string	1/scales_in_guitar/tune_guesser_process.rb	/^  def get_string$/;"	f	class:TuneGuesserProcess
+guess!	1/scales_in_guitar/tune_guesser.rb	/^  def guess!$/;"	f	class:TuneGuesser
+guess!	2/intervals/interval_guesser.rb	/^  def guess!$/;"	f	class:IntervalGuesser
+info	1/scales_in_guitar/tune_guesser.rb	/^  def info$/;"	f	class:TuneGuesser
+initialize	1/scales_in_guitar/tune_guesser.rb	/^  def initialize(options = {})$/;"	f	class:TuneGuesser
+initialize	1/scales_in_guitar/tune_guesser_process.rb	/^  def initialize(options:)$/;"	f	class:TuneGuesserProcess
+initialize	2/intervals/calculator.rb	/^    def initialize(from, to)$/;"	f	class:Interval.Calculator
+initialize	2/intervals/interval_guesser.rb	/^  def initialize(has_deviation:)$/;"	f	class:IntervalGuesser
+normalize_scales	2/intervals/calculator.rb	/^    def normalize_scales(options)$/;"	f	class:Interval.Calculator
+related_scales	1/scales_in_guitar/tune_guesser_process.rb	/^  def related_scales$/;"	f	class:TuneGuesserProcess
+run!	1/scales_in_guitar/tune_guesser_process.rb	/^  def run!$/;"	f	class:TuneGuesserProcess

@@ -1,4 +1,5 @@
 require_relative '../../1/scales_in_guitar/scales'
+require_relative 'calculator'
 
 module Intervals
   STEP_BY_INTERVAL = {
@@ -20,19 +21,19 @@ module Intervals
   }
 
   INTERVAL_BY_STEP = {
-    0.0 => %w(U unison),
-    0.5 => %w(m2 minor_second),
-    1.0 => %w(M2 major_second),
-    1.5 => %w(m3 minor_third),
-    2.0 => %w(M3 major_third),
-    2.5 => %w(P4 perfect_fourth),
-    3.0 => %w(augmented_forth diminished_fifrth tritone A4 D5 TT),
-    3.5 => %w(P5 perfect_fifth),
-    4.0 => %w(m6 minor_sixth),
-    4.5 => %w(M6 major_sixth),
-    5.0 => %w(m7 minor_seventh),
-    5.5 => %w(M7 major_seventh),
-    6.0 => %w(Oct octave)
+    0.0 => %w(U unison 纯一度),
+    0.5 => %w(m2 minor_second 小二度),
+    1.0 => %w(M2 major_second 大二度),
+    1.5 => %w(m3 minor_third 小三度),
+    2.0 => %w(M3 major_third 大三度),
+    2.5 => %w(P4 perfect_fourth 纯四度),
+    3.0 => %w(augmented_forth diminished_fifrth tritone A4 D5 TT 增四度 减五度),
+    3.5 => %w(P5 perfect_fifth 纯五度),
+    4.0 => %w(m6 minor_sixth 小六度),
+    4.5 => %w(M6 major_sixth 大六度),
+    5.0 => %w(m7 minor_seventh 小七度),
+    5.5 => %w(M7 major_seventh 大七度),
+    6.0 => %w(Oct octave 纯八度)
   }
 
   MAP = {
@@ -52,7 +53,6 @@ module Intervals
     #Oct: [[...]],                                                # step: 6.0
   }
 
-
   ##
   # ==== Description
   #   get the interval given two scales
@@ -71,6 +71,7 @@ module Intervals
   #   #=> %w(P4 perfect_fourth)
   #
   def self.atom(from, to)
-    Intervals::Calculator.new(from, to).calculate
+    require "pry";binding.pry
+    Interval::Calculator.new(from, to).calculate
   end
 end
