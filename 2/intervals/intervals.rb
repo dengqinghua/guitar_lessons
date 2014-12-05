@@ -71,7 +71,6 @@ module Intervals
   #   #=> %w(P4 perfect_fourth)
   #
   def self.atom(from, to)
-    require "pry";binding.pry
     Interval::Calculator.new(from, to).calculate
   end
 end

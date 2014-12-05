@@ -73,10 +73,15 @@ module Interval
       step = (@to - @from + @deviations).to_f
 
       step < 0 ? step += 6 : step
-      step > 6 ? step -= 6 : step
+      step > 6 ? step -= 6 : step # For now
     end
 
     private
+    ##
+    # ==== Description
+    #   seperate 'b', '#' out of 'b2', '#3', and calculate
+    # the deviations caused by '#' and 'b'
+    #
     def normalize_scales(options)
       from_string = options[:from].to_s.strip
       to_string   = options[:to].to_s.strip
