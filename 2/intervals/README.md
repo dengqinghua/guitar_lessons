@@ -120,6 +120,18 @@ Excercise2
 1- 2. 大九度 (大二度 + 7 = 大九度)
 ```
 
+练习代码
+--------
+```shell
+ruby pratice.rb
+
+#
+# Begin to guess interval
+# == Guess 1 ==
+# 6-3
+#
+```
+
 参考文档
 --------
-http://www.guitarlessonworld.com/lessons/intervals.html
+http://www.guitarlessonworld.com/lessons/intervals.htm
