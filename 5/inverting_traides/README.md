@@ -10,9 +10,6 @@
 
 --------------------------------------------------------------------------------
 
-> C 1 2 3 4 5 6 7 1
-> D 2 3 #4 5 6 7 #1 2
-> E 3 #4 #5 6 7 #1 #2 3
 
 转位和弦的概念
 -------------
@@ -28,13 +25,22 @@
 根音越靠近, 和弦与和弦之间的连接就会越流畅
 
 如:
+
   `C -> Em -> F -> G`
-根音走向为
+  
+根音走向为:
+
   `1 -> 3 -> 4 -> 5`
 
 可以通过转位和弦的形式, 使得根音称为下行流线, 转位后的和弦为
+
   `C -> Em/B -> F/A -> G`
 
-从而根音走向为: `1 -> 7 -> 6 -> 5`
+从而根音走向为:
+
+  `1 -> 7 -> 6 -> 5`
 
 转位和弦的使用示例
+==================
+[Tears in Heaven](https://github.com/dengqinghua/guitar_lessons/blob/master/5/Eric_Clapton-TearsInHeaven.pdf)
+[If](https://github.com/dengqinghua/guitar_lessons/blob/master/5/Bread-If.pdf)
