@@ -3,3 +3,6 @@
 1. [音阶](https://github.com/dengqinghua/guitar_lessons/tree/master/1/scales_in_guitar)
 2. [音程](https://github.com/dengqinghua/guitar_lessons/tree/master/2/intervals)
 3. [和弦](https://github.com/dengqinghua/guitar_lessons/tree/master/3/chords)
+4. [挂留和弦与六和弦](https://github.com/dengqinghua/guitar_lessons/tree/master/4)
+5. [转位和弦](https://github.com/dengqinghua/guitar_lessons/tree/master/5/inverting_traides)
+6. [属七和弦](https://github.com/dengqinghua/guitar_lessons/tree/master/6/dominant_seventh)
