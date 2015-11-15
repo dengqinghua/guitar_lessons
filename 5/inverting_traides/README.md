@@ -42,5 +42,5 @@
 
 转位和弦的使用示例
 ==================
-[Tears in Heaven](https://github.com/dengqinghua/guitar_lessons/blob/master/5/Eric_Clapton-TearsInHeaven.pdf)
-[If](https://github.com/dengqinghua/guitar_lessons/blob/master/5/Bread-If.pdf)
+- [Tears in Heaven](https://github.com/dengqinghua/guitar_lessons/blob/master/5/Eric_Clapton-TearsInHeaven.pdf)
+- [If](https://github.com/dengqinghua/guitar_lessons/blob/master/5/Bread-If.pdf)
