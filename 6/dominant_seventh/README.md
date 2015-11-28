@@ -231,13 +231,13 @@
 
 应用实例
 --------
-布鲁斯 I7 IV7 V7 I7
+### 布鲁斯 I7 IV7 V7 I7
+#### [Before You Accuse Me](http://www.ultimate-guitar.com/search.php?search_type=title&value=before+you+accuse+me)
 
 ### [Take Five](http://www.ultimate-guitar.com/search.php?search_type=title&value=take+five)
 ```
-Em -> Bm7
+Em -> Bm7 ->
 C -> Bm7 -> Am7 -> Gmaj7 ->
-C -> Bm7 -> Am7 -> Bm7sus4/#D ->
+C -> Bm7 -> Am7 -> Bm7sus4/#D B7 ->
 Em -> Bm7
 ```
-
