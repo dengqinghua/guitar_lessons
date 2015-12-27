@@ -6,3 +6,4 @@
 4. [挂留和弦与六和弦](https://github.com/dengqinghua/guitar_lessons/tree/master/4)
 5. [转位和弦](https://github.com/dengqinghua/guitar_lessons/tree/master/5/inverting_traides)
 6. [属七和弦](https://github.com/dengqinghua/guitar_lessons/tree/master/6/dominant_seventh)
+7. [小调和弦的七和弦](https://github.com/dengqinghua/guitar_lessons/tree/master/7/minor_modes/seventh_chords)
